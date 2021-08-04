@@ -26,11 +26,12 @@ class App extends Component {
       infinite: true,
       speed: 500,
       slidesToShow: 1,
+      centerMode: true,
       slidesToScroll: 1
     }
     return (
       <div className="App">
-        <Slider {...settings}>
+        <Slider className="the-slider" {...settings}>
           {photos.map( (photo) => {
             return (
               <div>
